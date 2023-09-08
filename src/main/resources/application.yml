@@ -1,0 +1,7 @@
+spring:
+  #Configured Spring DevTools
+  devtools:
+    restart:
+      enabled: true
+    livereload:
+      enabled: true
