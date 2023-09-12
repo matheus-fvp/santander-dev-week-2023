@@ -10,18 +10,15 @@ import java.math.BigDecimal;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity(name = "tb_account")
-public class Account {
+@Entity(name = "tb_card")
+public class Card {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Column(unique = true)
     private String number;
-    private String agency;
-    @Column(precision = 13, scale = 2)
-    private BigDecimal balance;
-    @Column(name = "account_limit", precision = 13, scale = 2)
+    @Column(name = "card_limit", precision = 13, scale = 2)
     private BigDecimal limit;
 
 }
